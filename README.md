@@ -6,7 +6,7 @@ This project implements a multimodal emotion recognition model using the **MELD 
 ---
 
 ## 🛠️ **Model Introduction**
-![Model Introduction](.images/Model Intro)  
+![Model Introduction](images/Model Intro)  
 
 **Explanation:**  
 The model takes **three different modalities** as input:  
