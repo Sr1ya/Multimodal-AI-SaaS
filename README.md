@@ -6,7 +6,7 @@ This project implements a multimodal emotion recognition model using the **MELD 
 ---
 
 ## 🛠️ **Model Introduction**
-![Model Introduction](images/Model Intro)  
+![Model Introduction](.images/Model Intro.png)   
 
 **Explanation:**  
 The model takes **three different modalities** as input:  
@@ -18,7 +18,7 @@ The outputs from these models are **fused using late fusion** to enhance accurac
 ---
 
 ## 📊 **Dataset Preparation**
-![Dataset Preparation](.images/Dataset-Prep)  
+![Dataset Preparation](.images/Dataset-Prep.png)  
 
 **Explanation:**  
 The **MELD dataset** contains:  
