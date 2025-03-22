@@ -167,8 +167,27 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Ruff stuff:
-.ruff_cache/
-
 # PyPI configuration file
 .pypirc
+
+tensorboard_logs/*
+
+# macOS system files
+.DS_Store
+**/.DS_Store
+
+# Dataset contents but keep folders
+dataset/dev/*
+!dataset/dev/.gitkeep
+dataset/test/*
+!dataset/test/.gitkeep
+dataset/train/*
+!dataset/train/.gitkeep
+
+deployment/model/*
+!deployment/model/.gitkeep
+
+deployment/model_normalized/*
+!deployment/model_normalized/.gitkeep
+
+*.tar.gz
