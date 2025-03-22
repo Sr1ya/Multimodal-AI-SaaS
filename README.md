@@ -34,7 +34,7 @@ The dataset is preprocessed by:
 ---
 
 ## ⚙️ **Model Architecture**
-![Model Architecture](./images/Architecture)  
+![Model Architecture](./images/Archi)
 
 **Explanation:**  
 The architecture consists of:  
