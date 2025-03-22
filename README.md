@@ -3,6 +3,24 @@
 ## 🚀 **Project Overview**
 This project implements a multimodal emotion recognition model using the **MELD dataset**, combining **text, audio, and visual features** through **late fusion**. The model is deployed and trained on **AWS Sagemaker** with **TensorBoard logs** for monitoring.
 
+Features:
+
+- 🎥 Video sentiment analysis
+- 📺 Video frame extraction
+- 🎙️ Audio feature extraction
+- 📝 Text embedding with BERT
+- 🔗 Multimodal fusion
+- 📊 Emotion and sentiment classification
+- 🚀 Model training and evaluation
+- 📈 TensorBoard logging
+- 🚀 AWS S3 for video storage
+- 🤖 AWS SageMaker endpoint integration
+- 🔐 User authentication with Auth.js
+- 🔑 API key management
+- 📊 Usage quota tracking
+- 📈 Real-time analysis results
+- 🎨 Modern UI with Tailwind CSS
+
 ---
 
 ## 🛠️ **Model Introduction**
@@ -96,25 +114,6 @@ The training and retraining process uses **AWS infrastructure**:
    - The updated model is deployed automatically.  
 
 ---
-
-
-Features:
-
-- 🎥 Video sentiment analysis
-- 📺 Video frame extraction
-- 🎙️ Audio feature extraction
-- 📝 Text embedding with BERT
-- 🔗 Multimodal fusion
-- 📊 Emotion and sentiment classification
-- 🚀 Model training and evaluation
-- 📈 TensorBoard logging
-- 🚀 AWS S3 for video storage
-- 🤖 AWS SageMaker endpoint integration
-- 🔐 User authentication with Auth.js
-- 🔑 API key management
-- 📊 Usage quota tracking
-- 📈 Real-time analysis results
-- 🎨 Modern UI with Tailwind CSS
 
 ## Setup For Model
 
