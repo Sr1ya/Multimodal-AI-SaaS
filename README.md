@@ -6,7 +6,7 @@ This project implements a multimodal emotion recognition model using the **MELD 
 ---
 
 ## 🛠️ **Model Introduction**
-![Model Introduction](./images/Model-Intro.png)   
+![Model Introduction](./images/Model-Intro)   
 
 **Explanation:**  
 The model takes **three different modalities** as input:  
@@ -84,7 +84,7 @@ The training and retraining process uses **AWS infrastructure**:
 ---
 
 ## 🔥 **Training and Retraining Process**
-![Training and Retraining](.images/training)  
+![Training and Retraining](./images/training)  
 
 **Explanation:**  
 1. **Initial Training:**  
