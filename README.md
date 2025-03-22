@@ -1,3 +1,103 @@
+# 🔥 **Multimodal Emotion Recognition Using MELD Dataset on AWS Sagemaker**
+
+## 🚀 **Project Overview**
+This project implements a multimodal emotion recognition model using the **MELD dataset**, combining **text, audio, and visual features** through **late fusion**. The model is deployed and trained on **AWS Sagemaker** with **TensorBoard logs** for monitoring.
+
+---
+
+## 🛠️ **Model Introduction**
+![Model Introduction](.images/Model Intro)  
+
+**Explanation:**  
+The model takes **three different modalities** as input:  
+- **Text features** extracted using a pre-trained transformer model.  
+- **Audio features** processed with a convolutional neural network (CNN).  
+- **Visual features** extracted using a pre-trained image model.  
+The outputs from these models are **fused using late fusion** to enhance accuracy.
+
+---
+
+## 📊 **Dataset Preparation**
+![Dataset Preparation](.images/Dataset-Prep)  
+
+**Explanation:**  
+The **MELD dataset** contains:  
+- **Text**: Dialogue transcripts.  
+- **Audio**: Speech recordings.  
+- **Visual**: Facial expressions from videos.  
+The dataset is preprocessed by:  
+1. Tokenizing text using `Hugging Face` transformers.  
+2. Extracting **MFCC features** from audio.  
+3. Using **ResNet or EfficientNet** for visual embeddings.  
+4. Synchronizing modalities using time-aligned frames.
+
+---
+
+## ⚙️ **Model Architecture**
+![Model Architecture](.images/Architecture)  
+
+**Explanation:**  
+The architecture consists of:  
+- **Text Encoder:** Transformer-based model for text representation.  
+- **Audio Encoder:** CNN or LSTM for speech features.  
+- **Visual Encoder:** Pretrained CNN for visual embeddings.  
+- **Late Fusion Layer:** Combines all three modalities using a **concatenation + dense layer**.  
+- **Classification Layer:** Applies softmax for multi-class emotion prediction.
+
+---
+
+## 🔥 **Model Fusion**
+![Model Fusion](.images/Model Fusion)  
+
+**Explanation:**  
+**Late Fusion** is performed by:  
+1. Extracting separate embeddings from the **text, audio, and visual encoders**.  
+2. Concatenating the embeddings.  
+3. Passing the combined representation through a **fully connected dense layer**.  
+4. Applying softmax for emotion classification.  
+
+---
+
+## 🔎 **Detailed Model**
+![Detailed Model](.images/Detailed Model)  
+
+**Explanation:**  
+The detailed model flow includes:  
+- Preprocessing pipelines for text, audio, and visual data.  
+- Separate encoders for feature extraction.  
+- Late fusion to combine features.  
+- Output layers with **categorical cross-entropy loss** for multi-class classification.
+
+---
+
+## ☁️ **AWS Architecture**
+![AWS Architecture](.images/AWS Architecture)  
+
+**Explanation:**  
+The training and retraining process uses **AWS infrastructure**:  
+- **EC2 Instances:** For model training.  
+- **S3 Buckets:** For dataset storage and model artifacts.  
+- **TensorBoard Logs:** For tracking training metrics.  
+- **Lambda Functions:** For triggering retraining on new data.  
+- **SageMaker:** For deploying and serving the model.
+
+---
+
+## 🔥 **Training and Retraining Process**
+![Training and Retraining](.images/training)  
+
+**Explanation:**  
+1. **Initial Training:**  
+   - Model is trained on the MELD dataset using TensorFlow/PyTorch.  
+   - TensorBoard logs are generated and stored in AWS.  
+2. **Retraining Workflow:**  
+   - New data is added to the S3 bucket.  
+   - AWS Lambda triggers a retraining job.  
+   - The updated model is deployed automatically.  
+
+---
+
+
 Features:
 
 - 🎥 Video sentiment analysis
@@ -174,3 +274,55 @@ python deployment/deploy_endpoint.py
 
 3. Open your browser and visit:
    [http://localhost:6006](http://localhost:6006)
+
+
+## Setup
+
+Follow these steps to install and set up the SaaS project:
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/ai-video-sentiment-saas.git
+cd ai-video-sentiment-saas
+```
+
+2. Install dependencies
+
+```
+npm install
+```
+
+3. Configure environment variables in .env:
+
+```
+DATABASE_URL="your-database-url"
+AUTH_SECRET="your-auth-secret"
+AWS_REGION="your-aws-region"
+AWS_ACCESS_KEY_ID="your-access-key"
+AWS_SECRET_ACCESS_KEY="your-secret-key"
+```
+
+4. Initialize the database:
+
+```
+npm run db:generate
+npm run db:push
+```
+
+## Running the app
+
+### Development
+
+```
+npm run dev
+```
+
+### Production
+
+```
+npm run build
+npm start
+```
