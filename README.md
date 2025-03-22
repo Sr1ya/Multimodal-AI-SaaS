@@ -116,20 +116,20 @@ Features:
 - 📈 Real-time analysis results
 - 🎨 Modern UI with Tailwind CSS
 
-## Setup
+## Setup For Model
 
 Follow these steps to install and set up the project.
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Andreaswt/ai-video-sentiment-model.git
+git clone https://github.com/Sr1ya/Multimodal-AI-SaaS.git
 ```
 
 ### Navigate to the Project Directory
 
 ```bash
-cd ai-video-sentiment-model
+cd Multimodal-AI-SaaS
 ```
 
 ### Install Python
@@ -285,8 +285,8 @@ Follow these steps to install and set up the SaaS project:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/ai-video-sentiment-saas.git
-cd ai-video-sentiment-saas
+git clone https://github.com/Sr1ya/Multimodal-AI-SaaS.git
+cd Multimodal-AI-SaaS/ai-saas
 ```
 
 2. Install dependencies
