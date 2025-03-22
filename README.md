@@ -1,4 +1,4 @@
-![alt text](thumbnail.png)
+
 
 [https://youtu.be/Myo5kizoSk0](https://youtu.be/Myo5kizoSk0)
 
