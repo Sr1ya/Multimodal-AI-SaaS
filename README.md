@@ -6,7 +6,7 @@ This project implements a multimodal emotion recognition model using the **MELD 
 ---
 
 ## 🛠️ **Model Introduction**
-![Model Introduction](.images/Model Intro.png)   
+![Model Introduction](./images/Model-Intro.png)   
 
 **Explanation:**  
 The model takes **three different modalities** as input:  
@@ -18,7 +18,7 @@ The outputs from these models are **fused using late fusion** to enhance accurac
 ---
 
 ## 📊 **Dataset Preparation**
-![Dataset Preparation](.images/Dataset-Prep.png)  
+![Dataset Preparation](./images/Dataset-Prep)  
 
 **Explanation:**  
 The **MELD dataset** contains:  
@@ -34,7 +34,7 @@ The dataset is preprocessed by:
 ---
 
 ## ⚙️ **Model Architecture**
-![Model Architecture](.images/Architecture)  
+![Model Architecture](./images/Architecture)  
 
 **Explanation:**  
 The architecture consists of:  
@@ -47,7 +47,7 @@ The architecture consists of:
 ---
 
 ## 🔥 **Model Fusion**
-![Model Fusion](.images/Model Fusion)  
+![Model Fusion](./images/Model-Fusion)  
 
 **Explanation:**  
 **Late Fusion** is performed by:  
@@ -59,7 +59,7 @@ The architecture consists of:
 ---
 
 ## 🔎 **Detailed Model**
-![Detailed Model](.images/Detailed Model)  
+![Detailed Model](./images/Detailed-Model)  
 
 **Explanation:**  
 The detailed model flow includes:  
@@ -71,7 +71,7 @@ The detailed model flow includes:
 ---
 
 ## ☁️ **AWS Architecture**
-![AWS Architecture](.images/AWS Architecture)  
+![AWS Architecture](./images/AWS-Architecture)  
 
 **Explanation:**  
 The training and retraining process uses **AWS infrastructure**:  
